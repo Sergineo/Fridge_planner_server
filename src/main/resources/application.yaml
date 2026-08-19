@@ -15,4 +15,5 @@ s3:
   baseurl: ${MINIO_HOST}
   username: ${MINIO_ACCESS_KEY}
   password: ${MINIO_SECRET_KEY}
-  bucket: ${MINIO_BUCKET_NAME}
+  bucket_product: ${MINIO_BUCKET_NAME_PRODUCTS}
+  bucket_users: ${MINIO_BUCKET_NAME_USERS}

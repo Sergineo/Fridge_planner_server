@@ -15,7 +15,7 @@ class MinioRepository(
 )
 {
     fun getUrlPicture(
-        bucketName: String = environment.config.property("s3.bucket").getString(),
+        bucketName: String,
         objectName: String): String {
         return minioClient.getPresignedObjectUrl(
             GetPresignedObjectUrlArgs.builder()
